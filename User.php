@@ -45,11 +45,16 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Sign UP</title>
-	<link rel="stylesheet" type="text/css"href="style.css">
+	<link rel="stylesheet" type="text/css" href="booking.css">
+  <a href="Login.php">LogIn</a>
+  <a href="booking.php">Booking</a>
+  <a href="User.php">Sign Up</a>
 </head>
 <body>
-	<img src="building.jpg" width="1750" height="900" >
+	<img src="building.jpg" width="1200" height="700" >
+  <div  class="container">
 	<h1>Sign Up</h1>
+
 <form id="SignUpForm" method="post">
 	<div>
 	<label>Username:</label>
@@ -68,7 +73,7 @@
 <br>
 <div>
 	<label>Confirm Password:</label>
-	<input type="Password" name="ConfirmPassword" id="ConfirmPassword" placeholder="Please confirm your Password">
+	<input type="password" name="ConfirmPassword" id="ConfirmPassword" placeholder="Please confirm your Password">
 </div>
 <div>
 	<br>
