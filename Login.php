@@ -41,14 +41,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Login</title>
     <link rel="stylesheet" type="text/css" href="booking.css">
-    <a href="booking.php">Booking</a>
+
+ 
+
 </head>
 <body>
-  <img src="building.jpg"width="1200" height="400">
+  <div class="navbar-container">
+    <ul class="navbar">
+        <li><a href="home.php">Home</a></li>       
+        <li><a href="User.php">Register</a></li>
+        <li><a href="Login.php">Login</a></li>
+        <li><a href="booking.php">Booking</a></li>
+    </ul>
+</div>
+  <img src="building.jpg"width="990" height="600">
 	<div class="container">
-		<h1>Login</h1>
+		<h1 id="log">Login</h1>
 
-		<form method="post" id="LogInForm">
+		<form method="post" id="LogInForm" class="container1">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" required>

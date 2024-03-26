@@ -46,16 +46,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Sign UP</title>
 	<link rel="stylesheet" type="text/css" href="booking.css">
-  <a href="Login.php">LogIn</a>
-  <a href="booking.php">Booking</a>
-  <a href="User.php">Sign Up</a>
+  
+      
 </head>
 <body>
+  <div class="navbar-container">
+    <ul class="navbar">
+        <li><a href="home.php">Home</a></li>       
+        <li><a href="User.php">Register</a></li>
+        <li><a href="Login.php">Login</a></li>
+        <li><a href="booking.php">Booking</a></li>
+    </ul>
+</div>
 	<img src="building.jpg" width="1200" height="700" >
   <div  class="container">
 	<h1>Sign Up</h1>
 
-<form id="SignUpForm" method="post">
+<form id="SignUpForm" method="post" class="container1">
 	<div>
 	<label>Username:</label>
 	<input type="name" name="Username" id="Username" placeholder=" Enter Username" >

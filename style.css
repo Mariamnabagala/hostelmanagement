@@ -1,0 +1,47 @@
+h1{
+color: #140840;
+text-transform: uppercase;
+text-decoration: underline;
+}
+#SignUpForm{
+	background-color:#3c7ade ;
+	border-radius: 7px;
+	padding: 10px;
+	margin: 8px,10px;
+	color: #0f1a05;
+}
+input,label,SignUp{
+	display: block;
+	text-align: center;
+	margin: auto;
+}
+input{
+	width:70%;
+	padding: 20px,20px;
+	border-radius: 9px;
+}
+.button{
+    padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+
+
+}
+#LogInForm{
+	background-color:#3c7ade ;
+	border-radius: 30px;
+	padding: 30px;
+	margin: 20px,30px;
+	color: #0f1a05;
+}
+body{
+	background-color: lightsalmon;
+}
+.loginbutton{
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+
+}
