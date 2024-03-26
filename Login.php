@@ -52,6 +52,7 @@
         <li><a href="User.php">Register</a></li>
         <li><a href="Login.php">Login</a></li>
         <li><a href="booking.php">Booking</a></li>
+        <li><a href="userProfile.php">Profile</a></li>
     </ul>
 </div>
   <img src="building.jpg"width="990" height="600">

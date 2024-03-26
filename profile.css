@@ -1,0 +1,28 @@
+.container2 {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+.profile-picture img {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.user-details label, .document-upload label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="file"], textarea {
+    width: 100%;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 10px;
+}

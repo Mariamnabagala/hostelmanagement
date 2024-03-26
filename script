@@ -1,0 +1,35 @@
+function uploadProfilePicture() {
+    var fileInput = document.getElementById('file-input');
+    var profileImage = document.getElementById('profile-image');
+    
+    if (fileInput.files && fileInput.files[0]) {
+        var reader = new FileReader();
+        
+        reader.onload = function(e) {
+            profileImage.src = e.target.result;
+        }
+        
+        reader.readAsDataURL(fileInput.files[0]);
+    }
+}
+
+function saveUserDetails() {
+    var form = document.getElementById('user-form');
+    var formData = new FormData(form);
+    
+    // Perform AJAX request to save user details
+    // Example:
+    /*
+    fetch('save_details.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log(data);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+    */
+}

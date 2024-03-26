@@ -19,14 +19,14 @@
         //echo "Email already exists"; //not successful
         $unsuccess = 1;
       } else{
-        $sql = "INSERT INTO pennywise(email, password, PhoneNumber) VALUES('$email','$password_hash','$PhoneNumber')";
+        $sql = "INSERT INTO user(email, password, PhoneNumber) VALUES('$email','$password_hash','$PhoneNumber')";
         $result = mysqli_query($connect, $sql);
+       
         if ($result) {
-          //echo "Signup successful"; //success
-          $success = 1;
-        } else{
-          die(mysqli_error($connect));
-        }
+    // Redirect to the login page after successful signup
+    header("Location: Login.php");
+    exit();
+}
       }
     }
 
@@ -38,6 +38,8 @@
 
 
 ?>
+
+
 
 <!DOCTYPE html>
 <html>
@@ -58,7 +60,7 @@
         <li><a href="booking.php">Booking</a></li>
     </ul>
 </div>
-	<img src="building.jpg" width="1200" height="700" >
+	<img src="building.jpg" width="1000" height="700" >
   <div  class="container">
 	<h1>Sign Up</h1>
 
@@ -105,3 +107,4 @@
 
 </body>
 </html>
+
