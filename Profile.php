@@ -27,18 +27,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Profile</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href ="booking.css">
+    <link rel="stylesheet" href ="Profile.css">
 
 </head>
 <body>
     <div class="navbar-container">
     <ul class="navbar">
         <li><a href="home.php">Home</a></li>       
-        <li><a href="User.php">Register</a></li>
-        <li><a href="Login.php">Login</a></li>
-        <li><a href="booking.php">Booking</a></li>
-        <li><a href="Profile.php">Profile</a></li>
     </ul>
 </div>
 <br>
