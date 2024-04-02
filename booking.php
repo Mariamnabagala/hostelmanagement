@@ -1,15 +1,27 @@
 <?php
 // Process booking
+include 'Connection.php';
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
+    $email = $_POST["email"];
+    $phoneNumber = $_POST["number"];
     $checkin = $_POST["checkin"];
     $checkout = $_POST["checkout"];
 
-    // Save booking details to database or perform other actions
-    // Here, we're just echoing a message
-    echo "Booking confirmed for $name from $checkin to $checkout";
+    // Insert booking details into the database
+    $sql = "INSERT INTO booking (booking_email, booking_number, check_in_date, check_out_date) 
+            VALUES ('$email', '$phoneNumber', '$checkin', '$checkout')";
+    
+    if (mysqli_query($conn, $sql)) {
+        // Booking inserted successfully
+        echo "Booking confirmed for $name from $checkin to $checkout";
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($connect);
+    }
 }
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,14 +41,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </ul>
 </div>
     <div class="container1">
-    <img src="room1.jpg" width="250"><img src="twinroom.jpg" width="270"><img src="Premium.jpg" width="290">
 
-<h3>Select Your desired room:</h3>
- <select>
- <option>Premium Room</option>
- <option>Cluster Room</option>
- <option>Twin Room</option>
+    <img src="room1.jpg" >
+    <p>premium room</p>
+    <img src="twinroom.jpg" width="780">
+    <p>twinroom</p>
+    <img src="Premium.jpg" width="750">
+    <p>premium room</p>
+    <img src="cluster.jpg">
+    <p>Cluster</p>
+
+    <h3>Select Your desired room:</h3>
+<select name="room"> <!-- Add name attribute -->
+    <option>Premium Room</option>
+    <option>Cluster Room</option>
+    <option>Twin Room</option>
 </select>
+
 <form action="book.php" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required placeholder="Enter your Fullname">
